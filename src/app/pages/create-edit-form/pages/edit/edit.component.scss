@@ -1,0 +1,41 @@
+.btn-holder {
+  margin: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  .back-button {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background-color: #000000;
+    color: #ffffff;
+    border-radius: 50%;
+    cursor: pointer;
+    outline: none;
+    &:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 15px;
+      height: 2px;
+      margin: auto;
+      background-color: #ffffff;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 14px;
+      bottom: 0;
+      margin: auto;
+      border-top: 2px solid #ffffff;
+      border-left: 2px solid #ffffff;
+      transform: rotate(-45deg);
+      width: 10px;
+      height: 10px;
+    }
+  }
+}

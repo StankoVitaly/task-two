@@ -1,0 +1,13 @@
+<form [formGroup]="createEditForm" (ngSubmit)="onSubmit(createEditForm)" novalidate>
+  <div class="form-group">
+    <label>Enter title</label>
+    <input type="text" class="form-control" formControlName="title">
+    <div class="btn-holder">
+      <app-loader [show]="loader"></app-loader>
+      <button type="submit"
+              class="button"
+              [disabled]="createEditForm.invalid">submit
+      </button>
+    </div>
+  </div>
+</form>

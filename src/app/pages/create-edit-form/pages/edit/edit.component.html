@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="row">
+    <div class="col-sm-12">
+
+      <div class="btn-holder">
+        <div class="back-button" routerLink="/"></div>
+        <div>Page edit</div>
+      </div>
+
+      <app-form [item]="item"
+                (Submit)="SaveAfterEdit($event)"
+                *ngIf="item"></app-form>
+    </div>
+  </div>
+</div>
